@@ -4,10 +4,12 @@
 
 
 
+
+
 <form action="/score" method="get">
   <label for="question">What is your best shot ?</label>
   <input type="text" id="question" name="attempt" placeholder="what time is it?">
+  <input type="hidden" name="start_time" value="<%= Time.now %>">
   <input type="hidden" name="grid" value="<%=@grid %>">
   <input type="submit" value="Go on!">
 </form>
-
