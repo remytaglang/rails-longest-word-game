@@ -1,0 +1,11 @@
+<h1>Plays#game</h1>
+<h2> Les lettres sont  : <%= @belle_grille %> </h2>
+
+
+
+<form action="/score" method="get">
+  <label for="question">What is your best shot ?</label>
+  <input type="text" id="question" name="attempt" placeholder="what time is it?">
+  <input type="submit" value="Go on!">
+</form>
+
